@@ -1,0 +1,661 @@
+{
+  "site": {
+    "name": "Channel5 Korea",
+    "legalName": "Channel5 Korea, Inc.",
+    "tagline": "B2B technology media platform connecting engineers and industry",
+    "taglineSecondary": "Technology communication partner for the semiconductor, embedded, AI, and SDV industries"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "mediaPlatform": "Media Platform",
+    "services": "Services",
+    "programs": "Programs",
+    "partners": "Partners",
+    "contact": "Contact",
+    "ctaPrimary": "Get in touch",
+    "languageToggle": "EN"
+  },
+  "home": {
+    "meta": {
+      "title": "Channel5 Korea — B2B technology media platform for electronics",
+      "description": "Channel5 Korea operates Korea's specialized technology media platform for the semiconductor, embedded, AI, and SDV industries, built on e4ds.com."
+    },
+    "hero": {
+      "headline": "B2B technology media\nplatform connecting engineers\nand industry",
+      "subheadline": "Channel5 Korea runs news, webinars, conferences, newsletters, technology contests, and education programs based on e4ds.com — supporting technology communications across the semiconductor, embedded, AI, and SDV industries.",
+      "ctaPrimary": "View services",
+      "ctaSecondary": "Get in touch",
+      "stats": {
+        "yearsLabel": "Years operating",
+        "yearsValue": "16+",
+        "audienceLabel": "Monthly reach",
+        "audienceValue": "420K+",
+        "partnersLabel": "Global partners",
+        "partnersValue": "120+"
+      }
+    },
+    "whatWeDo": {
+      "eyebrow": "What We Do",
+      "headline": "One media platform, six ways to reach engineers",
+      "description": "All services are built on the same audience base. They are different ways to deliver your technology message — not separate products.",
+      "cards": {
+        "media": {
+          "title": "Technical Media",
+          "description": "Industry news, interviews, and technical analysis through e4ds.com."
+        },
+        "webinar": {
+          "title": "Webinar Platform",
+          "description": "Planning, registration, and operation of online technical seminars for engineers."
+        },
+        "newsletter": {
+          "title": "Newsletter Marketing",
+          "description": "Opt-in newsletter delivery to a verified engineering audience."
+        },
+        "conference": {
+          "title": "Technology Conference",
+          "description": "Planning and operating large-scale events including Physical AI Conference, Tech Day, and Analog Day."
+        },
+        "contest": {
+          "title": "Developer Contest",
+          "description": "Engineer-driven challenges and project-based campaigns."
+        },
+        "education": {
+          "title": "Education Program",
+          "description": "Offline technical education aligned with corporate training and ESG initiatives."
+        }
+      }
+    },
+    "mediaSnapshot": {
+      "eyebrow": "Media Platform",
+      "headline": "e4ds.com is where global tech companies meet Korea's engineering audience",
+      "description": "Built on more than 16 years of accumulated technical content, e4ds.com connects news, newsletter, webinars, and conferences into a single audience journey.",
+      "audienceLabel": "Audience by Role",
+      "industryLabel": "Audience by Industry",
+      "cta": "Explore the Media Platform",
+      "placeholderNote": "Values shown are placeholders for design validation. Final data will be supplied by the operations team.",
+      "audienceItems": {
+        "rd": "R&D Engineers",
+        "decision": "Tech decision-makers",
+        "marketing": "Marketing / PR",
+        "academia": "Academia / Research",
+        "other": "Others"
+      },
+      "industryItems": {
+        "semiconductor": "Semiconductor",
+        "embedded": "Embedded",
+        "automotive": "Automotive Electronics",
+        "automation": "Industrial Automation",
+        "other": "Others"
+      }
+    },
+    "why": {
+      "eyebrow": "Why Channel5 Korea",
+      "headline": "Your technology message, delivered to the right audience",
+      "cards": {
+        "audience": {
+          "title": "Specialized Engineering Audience",
+          "description": "A reader base centered on R&D engineers and technical decision-makers across electronics, semiconductor, embedded, and automotive electronics."
+        },
+        "content": {
+          "title": "Editorial Capability",
+          "description": "The ability to interpret industry trends and translate them into editorial coverage, campaigns, and conference agendas."
+        },
+        "execution": {
+          "title": "Operational Experience",
+          "description": "Hands-on experience operating webinars, conferences, newsletters, contests, and education programs."
+        },
+        "partners": {
+          "title": "Partner Network",
+          "description": "Long-term partnerships with global semiconductor, electronics, and embedded companies."
+        }
+      }
+    },
+    "programs": {
+      "eyebrow": "Featured Programs",
+      "headline": "Conferences and programs that shape the industry agenda",
+      "description": "Each year, we plan conferences, contests, and education programs around the most relevant technology issues.",
+      "cta": "View All Programs",
+      "items": {
+        "physicalAI": "Physical AI Conference",
+        "techDay": "e4ds Tech Day",
+        "analogDay": "Analog Day",
+        "challenge": "Developer Challenge"
+      }
+    },
+    "partnersBlock": {
+      "eyebrow": "Partners",
+      "headline": "Global technology companies partner with Channel5 Korea to reach Korea's engineering market",
+      "cta": "View All Partners"
+    },
+    "contactCTA": {
+      "headline": "Planning a technology campaign, webinar, or conference?",
+      "description": "We'll propose the most suitable way to reach engineers. Select your area of interest and our team will respond within 1–3 business days.",
+      "ctaPrimary": "Request a Proposal",
+      "ctaSecondary": "Request Media Kit"
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "About",
+      "description": "Channel5 Korea is a B2B technology media platform company with over 16 years of experience interpreting the electronics, semiconductor, and embedded industries through e4ds.com."
+    },
+    "identity": {
+      "eyebrow": "About Channel5 Korea",
+      "headline": "We interpret technology\nand connect companies\nwith engineers.",
+      "body": "Channel5 Korea is a B2B technology media platform company. Built around e4ds.com, we interpret the technology landscape of the electronics, semiconductor, and embedded industries, and translate it into news, webinars, conferences, newsletters, developer contests, and education programs. We design technology communication, not short-term advertising.",
+      "imageCaption": "On-site operations across events, webinars, and conferences",
+      "stats": {
+        "yearsLabel": "Years operating",
+        "yearsValue": "16+",
+        "audienceLabel": "Monthly reach",
+        "audienceValue": "420K+",
+        "partnersLabel": "Global partners",
+        "partnersValue": "120+",
+        "eventsLabel": "Events per year",
+        "eventsValue": "20+"
+      }
+    },
+    "vision": {
+      "eyebrow": "Vision",
+      "headline": "An industry where\ntechnology messages reach\nthe right audience.",
+      "body": "When technology is misinterpreted or fails to reach its audience, the entire industry slows down. Channel5 Korea integrates media, content, events, and education to ensure that corporate technology messages reach engineers accurately and meaningfully."
+    },
+    "expertise": {
+      "eyebrow": "Areas of Expertise",
+      "headline": "The engineering domains we cover in depth.",
+      "items": {
+        "semiconductor": {
+          "title": "Semiconductor",
+          "description": "Design, IP, memory, packaging, back-end, equipment, and materials across the semiconductor industry."
+        },
+        "embedded": {
+          "title": "Embedded / Systems",
+          "description": "MCU, MPU, RTOS, embedded software, industrial communication, and security across embedded systems."
+        },
+        "automotive": {
+          "title": "Automotive / SDV",
+          "description": "Automotive semiconductors, ECUs, infotainment, ADAS, functional safety, and SDV trends."
+        },
+        "ai": {
+          "title": "AI / Machine Learning",
+          "description": "Industrial AI, Edge AI, machine vision, AI accelerators, and model optimization."
+        },
+        "power": {
+          "title": "Power / Analog",
+          "description": "DC-DC conversion, motor control, power semiconductors, batteries, and analog signal chains."
+        },
+        "automation": {
+          "title": "Industrial Automation",
+          "description": "Factory automation, PLC, industrial IoT, robotics, digital twin, and smart factory."
+        }
+      }
+    },
+    "history": {
+      "eyebrow": "History",
+      "headline": "16 years of operation.",
+      "placeholderNote": "Years to be confirmed by the operations team.",
+      "items": [
+        {
+          "year": "—",
+          "title": "Launch of e4ds.com",
+          "description": "Established as a B2B technology media platform for electronics and semiconductors."
+        },
+        {
+          "year": "—",
+          "title": "e4ds Newsletter",
+          "description": "Opt-in engineering audience mailing established."
+        },
+        {
+          "year": "—",
+          "title": "Webinar Business",
+          "description": "Launched online seminar operations with global technology companies."
+        },
+        {
+          "year": "—",
+          "title": "First e4ds Tech Day",
+          "description": "Series of large-scale offline technology conferences begins."
+        },
+        {
+          "year": "—",
+          "title": "First Analog Day",
+          "description": "Dedicated power and analog technology conference inaugurated."
+        },
+        {
+          "year": "—",
+          "title": "First Physical AI Conference",
+          "description": "Large conference focused on AI applications in industrial settings."
+        },
+        {
+          "year": "—",
+          "title": "Offline education / ESG expansion",
+          "description": "Education business expanded via partnerships with industry-academia and institutions."
+        }
+      ]
+    },
+    "cta": {
+      "headline": "Want to learn how Channel5 Korea\ncould help your team?",
+      "ctaPrimary": "View Services",
+      "ctaSecondary": "Get in Touch"
+    }
+  },
+  "mediaPlatform": {
+    "meta": {
+      "title": "Media Platform",
+      "description": "e4ds.com is a technology media platform for engineers in the electronics, semiconductor, embedded, AI, and SDV industries — and a gateway for companies to reach Korea's engineering audience."
+    },
+    "intro": {
+      "eyebrow": "e4ds.com",
+      "headline": "More than a news site.",
+      "body": "e4ds.com is a dedicated technology media platform for engineers in the electronics, semiconductor, embedded, AI, and SDV industries. It is built to interpret industry shifts and ensure that corporate technology messages reach the right readers.",
+      "cta": "Visit e4ds.com"
+    },
+    "audience": {
+      "eyebrow": "Audience",
+      "headline": "A reader base built on R&D engineers and technical decision-makers.",
+      "body": "The majority of our readers are R&D engineers and technical decision-makers across semiconductor, embedded, automotive electronics, and industrial automation. Audience precision — not raw traffic — is the value of this platform.",
+      "roleChartLabel": "Audience by Role",
+      "industryChartLabel": "Audience by Industry",
+      "disclaimer": "Figures above are placeholders derived from site analytics and member data. Final values will be supplied by the operations team and refreshed quarterly."
+    },
+    "content": {
+      "eyebrow": "Content Assets",
+      "headline": "Over 16 years of technical content.",
+      "items": {
+        "news": {
+          "title": "Industry News",
+          "description": "Daily updates on electronics and semiconductor industry news."
+        },
+        "interview": {
+          "title": "Interviews & Series",
+          "description": "Interviews with technology leaders and editorial series."
+        },
+        "analysis": {
+          "title": "Technical Analysis",
+          "description": "In-depth analysis of new technologies and industry trends."
+        },
+        "webinarArchive": {
+          "title": "Webinar Archive",
+          "description": "On-demand webinars and supporting materials."
+        }
+      }
+    },
+    "journey": {
+      "eyebrow": "Audience Journey",
+      "headline": "A unified audience journey.",
+      "body": "Reader interest that begins with news flows through newsletters, webinars, and conferences. This unified journey turns one-time exposure into sustained engagement.",
+      "steps": {
+        "site": "Site",
+        "newsletter": "Newsletter",
+        "webinar": "Webinar",
+        "conference": "Conference",
+        "make": "Make Platform"
+      }
+    },
+    "cta": {
+      "headline": "See how to put this media\nplatform to work.",
+      "ctaPrimary": "View Services",
+      "ctaSecondary": "Request Media Kit"
+    }
+  },
+  "services": {
+    "meta": {
+      "title": "Services",
+      "description": "Banner advertising, newsletter marketing, webinars, conferences, developer contests, and education programs — all built on the same engineering audience."
+    },
+    "intro": {
+      "eyebrow": "Services",
+      "headline": "One audience, six ways to engage.",
+      "body": "All services run on the same engineering audience. Banner, newsletter, webinar, conference, contest, and education programs are different formats for delivering your technology message — not separate audiences.",
+      "anchorLabel": "Jump to a service"
+    },
+    "items": {
+      "banner": {
+        "title": "Banner Advertising",
+        "oneLine": "Brand and campaign exposure across e4ds.com's engineering audience",
+        "body": "Place your brand and campaigns within the engineer's reading flow. Available across the homepage, category pages, and article detail pages — designed to create contextual exposure, not just impressions.",
+        "effects": [
+          "Precise reach to a technical audience",
+          "Sustained exposure across the campaign period"
+        ]
+      },
+      "newsletter": {
+        "title": "Newsletter Marketing",
+        "oneLine": "Opt-in newsletter delivery to a verified engineering audience",
+        "body": "Deliver your message directly to verified, opted-in readers. Available as integration into the regular newsletter, standalone dedicated send, or sponsored content format.",
+        "effects": [
+          "Direct inbox delivery unaffected by ad blockers",
+          "Content-style placements available"
+        ]
+      },
+      "webinar": {
+        "title": "Webinar",
+        "oneLine": "Planning, registration, and operation of online technical seminars",
+        "body": "Capture qualified leads at the registration stage, and deliver technical depth through presentation, demo, and Q&A. Available as standalone sessions or as multi-part campaign series.",
+        "effects": [
+          "Qualified lead generation",
+          "Technical credibility and direct sales follow-up"
+        ]
+      },
+      "conference": {
+        "title": "Conference",
+        "oneLine": "Large-scale industry events including Physical AI, Tech Day, and Analog Day",
+        "body": "Strengthen market positioning through keynotes, booths, and sessions within established industry agendas. Available as dedicated single-company events, co-hosted formats, or sponsorship participation.",
+        "effects": [
+          "Market positioning and face-to-face engagement",
+          "Industry visibility"
+        ]
+      },
+      "contest": {
+        "title": "Developer Contest",
+        "oneLine": "Engineer-driven challenges and project-based campaigns",
+        "body": "Drive real adoption by inviting engineers to build with your tools, platforms, or products. End-to-end operation: challenge design, recruitment, judging, awards, and post-event content.",
+        "effects": [
+          "Real-world product adoption and community building",
+          "Case content"
+        ]
+      },
+      "education": {
+        "title": "Education Program",
+        "oneLine": "Offline technical education aligned with corporate training and ESG",
+        "body": "Combine offline education and ESG activity to contribute to the long-term technology ecosystem. Designed and operated in partnership with universities, research institutes, and industry associations.",
+        "effects": [
+          "Long-term ESG contribution and ecosystem engagement",
+          "Access to the future engineering talent pool"
+        ]
+      }
+    },
+    "inquireCta": "Inquire about this service",
+    "integrated": {
+      "eyebrow": "Integrated Campaign",
+      "headline": "Combine services for stronger reach.",
+      "body": "Combining channels delivers stronger reach and recognition than any single placement. Product launches typically combine newsletter, webinar, and banner; market positioning combines conference and contest. We design the right mix for your stage."
+    },
+    "cta": {
+      "headline": "Let's find the right mix\nfor your goals.",
+      "ctaPrimary": "Request a Proposal",
+      "ctaSecondary": "Request Media Kit"
+    }
+  },
+  "programs": {
+    "meta": {
+      "title": "Programs",
+      "description": "Physical AI Conference, e4ds Tech Day, Analog Day, Developer Challenge, and education programs — built around the most relevant industry agendas."
+    },
+    "intro": {
+      "eyebrow": "Programs",
+      "headline": "Shaping the industry agenda.",
+      "body": "Each year, we redefine the themes of our conferences and programs based on where the industry is moving. We don't just run events — we create the spaces where companies and engineers think through technology change together."
+    },
+    "items": {
+      "physicalAI": {
+        "title": "Physical AI Conference",
+        "tag": "Conference",
+        "tagline": "Where AI meets the physical world",
+        "body": "Focused on how AI is being embedded into the physical world — across semiconductor, robotics, SDV, and industrial automation. Structured around keynotes, parallel tracks, and an exhibition area."
+      },
+      "techDay": {
+        "title": "e4ds Tech Day",
+        "tag": "Conference",
+        "tagline": "A flagship conference that redefines its theme each year",
+        "body": "Each year, e4ds Tech Day defines a new theme at the center of the electronics and semiconductor industry, and connects corporate technology and solutions with an engineering audience. One of our flagship conferences."
+      },
+      "analogDay": {
+        "title": "Analog Day",
+        "tag": "Conference",
+        "tagline": "Analog and power technology in a digital era",
+        "body": "A single-track conference dedicated to analog and power technologies — areas that remain critical even as the industry digitalizes. Power semiconductors, signal processing, sensors, and measurement are at the core."
+      },
+      "challenge": {
+        "title": "Developer Challenge",
+        "tag": "Contest",
+        "tagline": "Engineers building, not just attending",
+        "body": "Drive real adoption through engineer-built projects. We operate challenges around specific industry themes, including the Industrial Edge AI Solution Challenge."
+      },
+      "education": {
+        "title": "Education Program",
+        "tag": "Education",
+        "tagline": "Offline technical education with ESG impact",
+        "body": "We design and operate offline technical education programs in partnership with companies, educational institutions, and associations. End-to-end support: curriculum design, instructor matching, on-site operation, and reporting."
+      }
+    },
+    "sponsorship": {
+      "eyebrow": "Ways to Participate",
+      "headline": "Multiple ways to engage with our programs.",
+      "items": {
+        "keynote": {
+          "title": "Keynote Presentation",
+          "description": "Share corporate vision and technology message within the industry agenda."
+        },
+        "session": {
+          "title": "Track Session",
+          "description": "Deliver technical presentations and demos within specific tracks."
+        },
+        "booth": {
+          "title": "Exhibition Booth",
+          "description": "On-site booth for live demos and customer meetings."
+        },
+        "sponsor": {
+          "title": "Sponsorship",
+          "description": "Brand exposure through conference and contest sponsorship."
+        },
+        "cohost": {
+          "title": "Co-hosting",
+          "description": "Co-plan and co-operate events with Channel5 Korea."
+        }
+      }
+    },
+    "cta": {
+      "headline": "Interested in our upcoming programs?",
+      "ctaPrimary": "Inquire About Sponsorship",
+      "ctaSecondary": "View Past Events (e4ds.com)"
+    }
+  },
+  "partners": {
+    "meta": {
+      "title": "Partners",
+      "description": "Global semiconductor, electronics, and embedded companies partner with Channel5 Korea to reach Korea's engineering market."
+    },
+    "intro": {
+      "eyebrow": "Partners",
+      "headline": "Reaching Korea's engineers, together.",
+      "body": "Global technology companies have partnered with Channel5 Korea to reach Korea's engineering audience. Our partnerships are built on long-term technology communication, not one-off campaigns."
+    },
+    "categories": {
+      "eyebrow": "Partner Companies",
+      "items": {
+        "semiconductor": "Global Semiconductor Companies",
+        "distribution": "Electronics Distribution",
+        "measurement": "Measurement & Test",
+        "embedded": "Embedded & Software",
+        "education": "Educational Institutions & Associations"
+      },
+      "disclaimer": "Logos are displayed only with permission from the respective companies. Items shown here are placeholders.",
+      "logoPlaceholder": "Logo"
+    },
+    "collaboration": {
+      "eyebrow": "Types of Collaboration",
+      "headline": "The right collaboration depends on\nyour stage and goals.",
+      "body": "Product launches lean on webinar and newsletter. Market positioning leans on conference and contest. Long-term ecosystem engagement leans on education.",
+      "items": {
+        "webinar": {
+          "title": "Webinar",
+          "description": "Product and technology seminars."
+        },
+        "newsletter": {
+          "title": "Newsletter",
+          "description": "Content distribution and campaign amplification."
+        },
+        "conference": {
+          "title": "Conference",
+          "description": "Sessions, booths, and sponsorship."
+        },
+        "contest": {
+          "title": "Contest",
+          "description": "Engineer-driven technology campaigns."
+        },
+        "education": {
+          "title": "Education",
+          "description": "Offline technical education support."
+        }
+      }
+    },
+    "cases": {
+      "eyebrow": "Selected Cases",
+      "headline": "What we've delivered.",
+      "disclaimer": "Cases are published only with partner consent. Some are presented anonymously. Items shown here are placeholders.",
+      "items": [
+        {
+          "type": "Webinar series",
+          "title": "(Case 1 — to be confirmed by ops team)"
+        },
+        {
+          "type": "Conference sponsorship",
+          "title": "(Case 2 — to be confirmed by ops team)"
+        },
+        {
+          "type": "Contest operation",
+          "title": "(Case 3 — to be confirmed by ops team)"
+        }
+      ]
+    },
+    "cta": {
+      "headline": "Considering a partnership\nwith Channel5 Korea?",
+      "ctaPrimary": "Get in Touch",
+      "ctaSecondary": "Request Media Kit"
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "Contact",
+      "description": "Inquire about advertising, webinars, conferences, newsletters, developer contests, and education programs. We respond within 1–3 business days."
+    },
+    "headline": "Let's find the right approach\nfor your goal.",
+    "description": "Share your goal and we'll send a tailored proposal within one business day.",
+    "sidebar": {
+      "officeLabel": "Office",
+      "officeValue": "Gangnam · Seoul, Korea",
+      "addressLabel": "Address",
+      "address": "13F, Channel5 Korea Bldg.,\n123 Teheran-ro, Gangnam-gu, Seoul",
+      "phoneLabel": "Phone",
+      "phone": "+82-2-1234-5678",
+      "emailLabel": "Email",
+      "email": "partnership@channel5korea.com",
+      "hoursLabel": "Business hours",
+      "hours": "Mon–Fri 09:00–18:00 (KST)",
+      "imageCaption": "Office / design placeholder"
+    },
+    "mediaKit": {
+      "headline": "Request Media Kit",
+      "body": "Want to see audience data and rate cards before reaching out? Download the media kit directly.",
+      "cta": "Download media kit"
+    },
+    "form": {
+      "companySectionHeading": "Company information",
+      "contactSectionHeading": "Contact details",
+      "inquirySectionHeading": "Your inquiry",
+      "company": "Company name",
+      "name": "Name",
+      "position": "Position",
+      "email": "Email",
+      "phone": "Phone",
+      "interests": "Areas of interest",
+      "timeline": "Preferred timeline",
+      "message": "Message",
+      "requestMediaKit": "Also send me the media kit",
+      "privacyConsent": "I agree to the collection and use of personal information",
+      "submit": "Submit inquiry",
+      "submitting": "Sending…",
+      "interestOptions": {
+        "webinar": "Webinar",
+        "newsletter": "Newsletter",
+        "banner": "Banner Ads",
+        "conference": "Conference",
+        "contest": "Developer Contest",
+        "education": "Education Program",
+        "other": "Other"
+      },
+      "timelineOptions": {
+        "placeholder": "Select…",
+        "asap": "Immediately / Within 1 month",
+        "q1": "Within 1–3 months",
+        "q2": "Within 3–6 months",
+        "later": "Beyond 6 months",
+        "tbd": "Undecided"
+      },
+      "placeholders": {
+        "company": "Channel5 Korea",
+        "name": "Hong Gildong",
+        "position": "Marketing Manager",
+        "email": "you@company.com",
+        "phone": "+82 10 0000 0000",
+        "message": "Tell us about your campaign goals, target audience, and any special requirements…"
+      },
+      "errors": {
+        "required": "This field is required.",
+        "email": "Please enter a valid email.",
+        "phone": "Please enter a valid phone number.",
+        "interests": "Please select at least one area.",
+        "privacy": "Please agree to the privacy terms.",
+        "submit": "Submission failed. Please try again shortly."
+      },
+      "success": {
+        "headline": "Your inquiry has been received.",
+        "body": "Our team will get back to you within 1–3 business days. If you requested the media kit, we'll send it separately.",
+        "ctaReset": "Send another inquiry"
+      }
+    }
+  },
+  "floatingCTA": {
+    "label": "Get in touch",
+    "secondaryLabel": "Request media kit"
+  },
+  "footer": {
+    "aboutDescription": "A B2B technology media platform operating technology communications for the electronics, semiconductor, and embedded industries, built on e4ds.com.",
+    "servicesHeading": "Services",
+    "companyHeading": "Company",
+    "platformsHeading": "Platforms",
+    "contactHeading": "Contact",
+    "servicesLinks": {
+      "banner": "Banner Ads",
+      "newsletter": "Newsletter Marketing",
+      "webinar": "Webinars",
+      "conference": "Conferences",
+      "contest": "Technology Contests",
+      "education": "Education Programs"
+    },
+    "platformsLinks": {
+      "e4ds": "e4ds.com",
+      "webinar": "e4ds Webinar",
+      "make": "Make.e4ds",
+      "kmap": "KMAP"
+    },
+    "contactInfo": {
+      "addressLabel": "Address",
+      "address": "13F, Channel5 Korea Bldg., 123 Teheran-ro, Gangnam-gu, Seoul",
+      "emailLabel": "Email",
+      "email": "partnership@channel5korea.com",
+      "phoneLabel": "Phone",
+      "phone": "+82-2-1234-5678",
+      "hoursLabel": "Business hours",
+      "hours": "Mon–Fri 09:00–18:00 (KST)"
+    },
+    "copyright": "© 2026 Channel5 Korea, Inc. All rights reserved.",
+    "legalLinks": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Use"
+    }
+  },
+  "cookieBanner": {
+    "message": "This site uses cookies to improve user experience and gather analytics.",
+    "acceptLabel": "Accept",
+    "rejectLabel": "Decline",
+    "policyLink": "View privacy policy"
+  },
+  "notFound": {
+    "headline": "Page Not Found",
+    "description": "The page you're looking for doesn't exist or has been moved.",
+    "ctaPrimary": "Return Home",
+    "ctaSecondary": "View Services"
+  }
+}

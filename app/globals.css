@@ -1,0 +1,88 @@
+@import "pretendard/dist/web/variable/pretendardvariable.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Brand */
+    --color-brand-primary: 11 27 43;
+    --color-brand-primary-foreground: 255 255 255;
+    --color-brand-accent: 30 99 255;
+    --color-brand-accent-foreground: 255 255 255;
+    --color-brand-accent-hover: 23 81 217;
+
+    /* Neutral */
+    --color-neutral-50: 248 250 252;
+    --color-neutral-100: 241 245 249;
+    --color-neutral-200: 226 232 240;
+    --color-neutral-300: 203 213 225;
+    --color-neutral-400: 148 163 184;
+    --color-neutral-500: 100 116 139;
+    --color-neutral-600: 71 85 105;
+    --color-neutral-700: 51 65 85;
+    --color-neutral-800: 30 41 59;
+    --color-neutral-900: 15 23 42;
+
+    /* Semantic */
+    --color-background: 255 255 255;
+    --color-background-muted: 248 250 252;
+    --color-background-inverse: 11 27 43;
+    --color-foreground: 15 23 42;
+    --color-foreground-muted: 100 116 139;
+    --color-foreground-inverse: 255 255 255;
+    --color-border: 226 232 240;
+    --color-border-strong: 203 213 225;
+    --color-ring: 30 99 255;
+
+    /* Feedback */
+    --color-success: 22 163 74;
+    --color-warning: 234 179 8;
+    --color-error: 220 38 38;
+    --color-info: 30 99 255;
+
+    /* Chart */
+    --color-chart-1: 30 99 255;
+    --color-chart-2: 83 136 255;
+    --color-chart-3: 136 173 255;
+    --color-chart-4: 189 210 255;
+    --color-chart-5: 11 27 43;
+    --color-chart-grid: 226 232 240;
+
+    /* Fonts (next/font supplies --font-inter / --font-jetbrains-mono via html element) */
+    --font-sans:
+      var(--font-inter), "Pretendard Variable", system-ui, -apple-system,
+      sans-serif;
+    --font-mono:
+      var(--font-jetbrains-mono), "Pretendard Variable", monospace;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  /* Scroll offset for anchor links under sticky header */
+  :target {
+    scroll-margin-top: 80px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer utilities {
+  .container-page {
+    @apply max-w-7xl mx-auto px-6 lg:px-8;
+  }
+}

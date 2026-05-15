@@ -1,0 +1,661 @@
+{
+  "site": {
+    "name": "채널5코리아",
+    "legalName": "주식회사 채널5코리아",
+    "tagline": "기술 기업과 엔지니어를 연결하는 전기전자 전문 미디어 플랫폼",
+    "taglineSecondary": "반도체·임베디드·AI·SDV 산업을 위한 B2B 기술 커뮤니케이션 파트너"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "mediaPlatform": "Media Platform",
+    "services": "Services",
+    "programs": "Programs",
+    "partners": "Partners",
+    "contact": "Contact",
+    "ctaPrimary": "제안 문의",
+    "languageToggle": "KO"
+  },
+  "home": {
+    "meta": {
+      "title": "채널5코리아 — 전기전자 전문 B2B 미디어 플랫폼",
+      "description": "채널5코리아는 e4ds.com을 기반으로 반도체·임베디드·AI·SDV 산업의 기술 커뮤니케이션을 운영하는 B2B 기술 미디어 플랫폼 기업입니다."
+    },
+    "hero": {
+      "headline": "기술 기업과\n엔지니어를 연결하는 전기전자\n전문 미디어 플랫폼",
+      "subheadline": "채널5코리아는 e4ds.com을 기반으로 뉴스, 웨비나, 컨퍼런스, 뉴스레터, 기술 콘테스트, 교육 사업을 운영하며 반도체·임베디드·AI·SDV 산업의 기술 커뮤니케이션을 지원합니다.",
+      "ctaPrimary": "서비스 보기",
+      "ctaSecondary": "제안 문의하기",
+      "stats": {
+        "yearsLabel": "운영 연수",
+        "yearsValue": "16+",
+        "audienceLabel": "월 도달",
+        "audienceValue": "420K+",
+        "partnersLabel": "글로벌 파트너",
+        "partnersValue": "120+"
+      }
+    },
+    "whatWeDo": {
+      "eyebrow": "사업 영역",
+      "headline": "하나의 미디어 자산, 여섯 가지 커뮤니케이션 방식",
+      "description": "채널5코리아의 서비스는 모두 동일한 독자 자산 위에서 운영됩니다. 기업의 기술 메시지를 어떤 형태로 전달할 것인지에 대한 선택지입니다.",
+      "cards": {
+        "media": {
+          "title": "기술 미디어",
+          "description": "e4ds.com을 기반으로 한 산업 뉴스, 인터뷰, 기술 분석 콘텐츠."
+        },
+        "webinar": {
+          "title": "웨비나 플랫폼",
+          "description": "엔지니어 대상 온라인 기술 세미나 기획·모집·운영."
+        },
+        "newsletter": {
+          "title": "뉴스레터 마케팅",
+          "description": "구독 동의 기반 기술 독자에게 직접 도달하는 메일링."
+        },
+        "conference": {
+          "title": "기술 컨퍼런스",
+          "description": "Physical AI, Tech Day, Analog Day 등 대형 기술 행사 기획·운영."
+        },
+        "contest": {
+          "title": "개발자 콘테스트",
+          "description": "엔지니어 참여형 챌린지 및 프로젝트 캠페인."
+        },
+        "education": {
+          "title": "교육 지원 사업",
+          "description": "기업의 기술 교육·ESG 활동과 연계한 오프라인 교육."
+        }
+      }
+    },
+    "mediaSnapshot": {
+      "eyebrow": "미디어 플랫폼",
+      "headline": "e4ds.com은 한국 엔지니어 시장과 만나는 전문 접점입니다",
+      "description": "16년 이상 축적된 기술 콘텐츠와 엔지니어 독자 기반 위에서 뉴스·뉴스레터·웨비나·컨퍼런스가 하나의 독자 동선으로 연결되어 있습니다.",
+      "audienceLabel": "독자 직군 구성",
+      "industryLabel": "독자 산업 분포",
+      "cta": "미디어 플랫폼 자세히 보기",
+      "placeholderNote": "표시된 수치는 디자인 검증용 placeholder입니다. 운영팀 확정 데이터로 교체 예정.",
+      "audienceItems": {
+        "rd": "R&D 엔지니어",
+        "decision": "기술 의사결정자",
+        "marketing": "마케팅 / PR",
+        "academia": "학계 / 연구",
+        "other": "기타"
+      },
+      "industryItems": {
+        "semiconductor": "반도체",
+        "embedded": "임베디드",
+        "automotive": "자동차 전장",
+        "automation": "산업 자동화",
+        "other": "기타"
+      }
+    },
+    "why": {
+      "eyebrow": "채널5코리아를 선택하는 이유",
+      "headline": "기술 메시지가 정확한 독자에게 도달하도록",
+      "cards": {
+        "audience": {
+          "title": "전문 기술 독자",
+          "description": "전기전자·반도체·임베디드·자동차 전장 분야의 R&D 엔지니어와 기술 의사결정자 중심 독자."
+        },
+        "content": {
+          "title": "콘텐츠 기획력",
+          "description": "산업 트렌드를 해석해 기술 콘텐츠, 캠페인, 컨퍼런스 아젠다로 전환하는 기획 역량."
+        },
+        "execution": {
+          "title": "실행 경험",
+          "description": "웨비나, 컨퍼런스, 뉴스레터, 콘테스트, 교육 프로그램 운영을 통해 축적된 실행 역량."
+        },
+        "partners": {
+          "title": "파트너 네트워크",
+          "description": "글로벌 반도체·전자·임베디드 기업과의 장기 협업 기반."
+        }
+      }
+    },
+    "programs": {
+      "eyebrow": "대표 프로그램",
+      "headline": "산업 아젠다를 만드는 컨퍼런스와 프로그램",
+      "description": "매년 주요 기술 이슈를 중심으로 컨퍼런스, 콘테스트, 교육 프로그램을 기획합니다.",
+      "cta": "모든 프로그램 보기",
+      "items": {
+        "physicalAI": "Physical AI Conference",
+        "techDay": "e4ds Tech Day",
+        "analogDay": "Analog Day",
+        "challenge": "Developer Challenge"
+      }
+    },
+    "partnersBlock": {
+      "eyebrow": "파트너",
+      "headline": "글로벌 기술 기업들이 한국 엔지니어 시장에서 채널5코리아와 함께합니다",
+      "cta": "파트너 전체 보기"
+    },
+    "contactCTA": {
+      "headline": "기술 캠페인, 웨비나, 컨퍼런스를 검토하고 계신가요?",
+      "description": "채널5코리아가 엔지니어에게 도달하는 적합한 방식을 제안드립니다. 관심 서비스를 선택하시면 담당자가 검토 후 회신드립니다.",
+      "ctaPrimary": "제안 문의하기",
+      "ctaSecondary": "미디어킷 요청하기"
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "회사 소개",
+      "description": "채널5코리아는 e4ds.com을 기반으로 16년 이상 전기전자·반도체·임베디드 산업의 기술 흐름을 해석해온 B2B 기술 미디어 플랫폼 기업입니다."
+    },
+    "identity": {
+      "eyebrow": "회사 소개",
+      "headline": "기술을 해석하고, 기업과\n엔지니어를 연결합니다.",
+      "body": "채널5코리아는 e4ds.com을 기반으로 전기전자·반도체·임베디드 산업의 기술 흐름을 해석하고, 이를 뉴스·웨비나·컨퍼런스·뉴스레터·콘테스트·교육 사업으로 연결하는 B2B 기술 미디어 플랫폼 기업입니다. 단기 광고 대행이 아닌, 기술 콘텐츠와 산업 커뮤니케이션을 함께 설계합니다.",
+      "imageCaption": "행사·웨비나·컨퍼런스 운영 현장",
+      "stats": {
+        "yearsLabel": "운영 연수",
+        "yearsValue": "16+",
+        "audienceLabel": "월 도달",
+        "audienceValue": "420K+",
+        "partnersLabel": "글로벌 파트너",
+        "partnersValue": "120+",
+        "eventsLabel": "연간 행사",
+        "eventsValue": "20+"
+      }
+    },
+    "vision": {
+      "eyebrow": "비전",
+      "headline": "기술 메시지가 올바른\n독자에게 닿는 산업\n생태계.",
+      "body": "기업의 기술이 시장에 잘못 해석되거나 도달하지 못하면, 산업 전체의 발전 속도가 느려집니다. 채널5코리아는 기업의 기술 메시지가 엔지니어 독자에게 정확하게 도달하는 커뮤니케이션 환경을 만들기 위해 미디어, 콘텐츠, 행사, 교육을 통합 운영합니다."
+    },
+    "expertise": {
+      "eyebrow": "전문 분야",
+      "headline": "우리가 깊이 다루는 엔지니어링 분야.",
+      "items": {
+        "semiconductor": {
+          "title": "반도체",
+          "description": "반도체 설계, IP, 메모리, 패키지, 후공정, 장비, 소재 등 산업 전반의 기술 흐름."
+        },
+        "embedded": {
+          "title": "임베디드 / 시스템",
+          "description": "MCU, MPU, RTOS, 임베디드 SW, 산업 통신, 보안 등 임베디드 분야의 기술 흐름."
+        },
+        "automotive": {
+          "title": "자동차 전장 / SDV",
+          "description": "차량 반도체, ECU, 인포테인먼트, ADAS, Functional Safety, SDV 트렌드."
+        },
+        "ai": {
+          "title": "AI / 머신러닝",
+          "description": "Industrial AI, Edge AI, 머신 비전, AI 가속기, 모델 최적화 등 적용형 AI 기술."
+        },
+        "power": {
+          "title": "전력 / 아날로그",
+          "description": "DC-DC, 모터 제어, 전력 반도체, 배터리, 아날로그 신호 체인 분야."
+        },
+        "automation": {
+          "title": "산업 자동화",
+          "description": "FA, PLC, 산업용 IoT, 로보틱스, 디지털 트윈, 스마트 팩토리 흐름."
+        }
+      }
+    },
+    "history": {
+      "eyebrow": "연혁",
+      "headline": "16년의 기록.",
+      "placeholderNote": "연도는 운영팀 확정 후 갱신됩니다.",
+      "items": [
+        {
+          "year": "—",
+          "title": "e4ds.com 창간",
+          "description": "전기전자·반도체 분야 B2B 기술 미디어로 출범."
+        },
+        {
+          "year": "—",
+          "title": "e4ds 뉴스레터 시작",
+          "description": "구독 동의 기반 엔지니어 메일링 구축."
+        },
+        {
+          "year": "—",
+          "title": "웨비나 사업 시작",
+          "description": "글로벌 기술 기업과의 온라인 세미나 운영 개시."
+        },
+        {
+          "year": "—",
+          "title": "e4ds Tech Day 출범",
+          "description": "오프라인 대형 기술 컨퍼런스 시리즈 시작."
+        },
+        {
+          "year": "—",
+          "title": "Analog Day 출범",
+          "description": "전력·아날로그 전문 컨퍼런스 첫 개최."
+        },
+        {
+          "year": "—",
+          "title": "Physical AI Conference 출범",
+          "description": "산업 현장의 AI 적용을 다루는 대형 컨퍼런스."
+        },
+        {
+          "year": "—",
+          "title": "오프라인 교육 / ESG 사업 확장",
+          "description": "산학협력·교육기관 협업 기반 교육 사업 본격화."
+        }
+      ]
+    },
+    "cta": {
+      "headline": "채널5코리아가 귀사에 어떤 도움을 드릴\n수 있는지 알고 싶으신가요?",
+      "ctaPrimary": "서비스 보기",
+      "ctaSecondary": "협업 문의하기"
+    }
+  },
+  "mediaPlatform": {
+    "meta": {
+      "title": "미디어 플랫폼",
+      "description": "e4ds.com은 전기전자·반도체·임베디드·AI·SDV 분야 엔지니어를 위한 전문 기술 미디어이자, 기업이 한국 엔지니어 시장과 만나는 접점입니다."
+    },
+    "intro": {
+      "eyebrow": "e4ds.com",
+      "headline": "단순한 뉴스 사이트가 아닙니다.",
+      "body": "e4ds.com은 전기전자·반도체·임베디드·AI·SDV 분야 엔지니어를 위한 전문 기술 미디어입니다. 산업 흐름을 해석하고, 기업의 기술 메시지가 정확한 독자에게 도달하도록 설계된 콘텐츠 플랫폼입니다.",
+      "cta": "e4ds.com 바로가기"
+    },
+    "audience": {
+      "eyebrow": "독자 구조",
+      "headline": "R&D 엔지니어와 기술 의사결정자 중심의 독자.",
+      "body": "독자의 다수는 반도체, 임베디드, 자동차 전장, 산업 자동화 분야의 R&D 엔지니어와 기술 의사결정자입니다. 단순 트래픽이 아닌 직군의 정확도가 미디어의 가치입니다.",
+      "roleChartLabel": "독자 직군 분포",
+      "industryChartLabel": "독자 산업 분포",
+      "disclaimer": "위 수치는 사이트 통계 및 회원 데이터를 기반으로 정리한 placeholder이며, 운영팀 확정 후 분기별로 갱신됩니다."
+    },
+    "content": {
+      "eyebrow": "콘텐츠 자산",
+      "headline": "16년 이상 축적된 기술 콘텐츠.",
+      "items": {
+        "news": {
+          "title": "산업 뉴스",
+          "description": "매일 업데이트되는 전기전자·반도체 산업 뉴스."
+        },
+        "interview": {
+          "title": "인터뷰·연재",
+          "description": "기술 리더와의 인터뷰, 산업 연재 기획."
+        },
+        "analysis": {
+          "title": "기술 분석",
+          "description": "신기술과 산업 변화에 대한 분석 콘텐츠."
+        },
+        "webinarArchive": {
+          "title": "웨비나 아카이브",
+          "description": "진행된 웨비나의 다시 보기 및 자료."
+        }
+      }
+    },
+    "journey": {
+      "eyebrow": "독자 접점",
+      "headline": "단일 독자 동선으로 연결된 접점.",
+      "body": "뉴스에서 시작된 관심이 뉴스레터·웨비나·컨퍼런스로 이어지는 단일 독자 동선을 통해, 기업의 기술 메시지가 단발성이 아닌 지속적 접점으로 전달됩니다.",
+      "steps": {
+        "site": "사이트",
+        "newsletter": "뉴스레터",
+        "webinar": "웨비나",
+        "conference": "컨퍼런스",
+        "make": "Make 플랫폼"
+      }
+    },
+    "cta": {
+      "headline": "미디어 자산을 어떻게 활용할 수\n있는지 확인해보세요.",
+      "ctaPrimary": "서비스 보기",
+      "ctaSecondary": "미디어킷 요청하기"
+    }
+  },
+  "services": {
+    "meta": {
+      "title": "서비스",
+      "description": "배너 광고, 뉴스레터, 웨비나, 컨퍼런스, 기술 콘테스트, 교육 지원 사업을 운영합니다. 기업의 목적에 맞는 미디어 활용 방식을 제안합니다."
+    },
+    "intro": {
+      "eyebrow": "서비스",
+      "headline": "하나의 독자, 여섯 가지 접점.",
+      "body": "채널5코리아의 서비스는 모두 동일한 독자 자산 위에서 운영됩니다. 배너, 뉴스레터, 웨비나, 컨퍼런스, 콘테스트, 교육 지원 사업은 기업의 기술 메시지를 어떤 형태로 전달할 것인지에 대한 선택지입니다.",
+      "anchorLabel": "각 서비스로 이동"
+    },
+    "items": {
+      "banner": {
+        "title": "배너 광고",
+        "oneLine": "e4ds.com 기술 독자를 대상으로 한 브랜드 및 캠페인 노출",
+        "body": "기술 독자가 콘텐츠를 소비하는 흐름 안에서 브랜드와 캠페인을 노출하여, 단순 도달이 아닌 맥락 있는 접점을 만듭니다. 메인, 카테고리, 콘텐츠 상세 등 다양한 위치에서 운영 가능합니다.",
+        "effects": [
+          "기술 독자 대상 정밀 도달",
+          "캠페인 기간 동안 지속적 노출"
+        ]
+      },
+      "newsletter": {
+        "title": "뉴스레터 마케팅",
+        "oneLine": "구독 동의 기반 기술 독자에게 직접 도달하는 메일링",
+        "body": "구독 동의를 기반으로 한 독자에게 직접 도달하여, 기업의 기술 메시지가 받은편지함 수준의 접점으로 전달됩니다. 정기 뉴스레터, 단독 발송, 콘텐츠형 광고 등 다양한 포맷을 운영합니다.",
+        "effects": [
+          "광고 차단의 영향 없이 받은편지함 도달",
+          "콘텐츠형 노출 가능"
+        ]
+      },
+      "webinar": {
+        "title": "웨비나",
+        "oneLine": "엔지니어 대상 온라인 기술 세미나 기획·모집·운영",
+        "body": "참여 등록 단계에서 잠재 고객 정보를 확보하고, 발표·시연·Q&A를 통해 제품과 기술의 깊이를 전달합니다. 단발성 웨비나부터 시리즈형 캠페인까지 운영 가능합니다.",
+        "effects": [
+          "잠재 고객 리드 확보",
+          "기술 신뢰도 형성, 영업 연계 가능"
+        ]
+      },
+      "conference": {
+        "title": "컨퍼런스",
+        "oneLine": "Physical AI, Tech Day, Analog Day 등 대형 기술 행사",
+        "body": "주요 산업 아젠다 안에서 발표·부스·세션을 통해 시장 내 포지셔닝을 강화합니다. 단일 기업 전용 행사 기획부터, 공동 주최, 스폰서십 참여까지 다양한 형태로 협업합니다.",
+        "effects": [
+          "시장 내 포지셔닝, 대면 네트워킹",
+          "산업 영향력 강화"
+        ]
+      },
+      "contest": {
+        "title": "기술 콘테스트",
+        "oneLine": "엔지니어 참여형 챌린지 및 프로젝트 캠페인",
+        "body": "엔지니어의 직접 참여를 통해 기업의 개발 도구, 플랫폼, 제품을 실제 사용 경험으로 확산시킵니다. 출제, 모집, 운영, 시상, 결과 콘텐츠 제작까지 통합 운영합니다.",
+        "effects": [
+          "실제 사용 경험 확산, 개발자 커뮤니티 형성",
+          "사례 콘텐츠 확보"
+        ]
+      },
+      "education": {
+        "title": "교육 지원 사업",
+        "oneLine": "기업의 기술 교육·ESG 활동과 연계한 오프라인 교육",
+        "body": "오프라인 교육과 ESG 활동을 결합해 장기적 기술 생태계 기여 활동으로 연결합니다. 대학·연구기관·산업 협회와의 협업을 통해 교육 콘텐츠와 운영을 함께 설계합니다.",
+        "effects": [
+          "장기 ESG 활동, 산업 생태계 기여",
+          "미래 엔지니어 풀과의 접점"
+        ]
+      }
+    },
+    "inquireCta": "이 서비스 문의하기",
+    "integrated": {
+      "eyebrow": "통합 캠페인",
+      "headline": "여러 서비스를 결합하면 더 강한 도달이 만들어집니다.",
+      "body": "단일 서비스보다 여러 채널을 결합한 통합 캠페인이 도달 효율과 인지 효과를 함께 만듭니다. 신제품 출시 시점에는 뉴스레터·웨비나·배너를, 시장 포지셔닝 단계에서는 컨퍼런스와 콘테스트를 결합한 캠페인 설계가 가능합니다."
+    },
+    "cta": {
+      "headline": "목표에 맞는 최적의 조합을 함께\n찾아드립니다.",
+      "ctaPrimary": "서비스 제안 문의하기",
+      "ctaSecondary": "미디어킷 요청하기"
+    }
+  },
+  "programs": {
+    "meta": {
+      "title": "프로그램",
+      "description": "Physical AI Conference, e4ds Tech Day, Analog Day, Developer Challenge, 교육 프로그램 등 산업 아젠다 중심의 행사와 프로그램을 운영합니다."
+    },
+    "intro": {
+      "eyebrow": "프로그램",
+      "headline": "산업 아젠다를 함께 만드는 작업.",
+      "body": "채널5코리아는 산업의 기술 변화 흐름에 따라 매년 컨퍼런스와 프로그램의 주제를 새롭게 정의합니다. 단순 행사 운영이 아닌, 기업과 엔지니어가 기술 변화의 방향을 함께 검토하는 장을 만드는 작업으로 접근합니다."
+    },
+    "items": {
+      "physicalAI": {
+        "title": "Physical AI Conference",
+        "tag": "Conference",
+        "tagline": "AI와 물리 세계의 결합",
+        "body": "AI가 물리 세계와 결합되는 흐름을 중심으로, 반도체·로보틱스·SDV·산업 자동화 분야의 기술과 비즈니스를 함께 다룹니다. 키노트, 트랙 세션, 전시 부스로 구성됩니다."
+      },
+      "techDay": {
+        "title": "e4ds Tech Day",
+        "tag": "Conference",
+        "tagline": "매년 새로운 기술 주제를 정의하는 컨퍼런스",
+        "body": "전기전자·반도체 산업의 핵심 기술을 매년 새로운 주제로 정의하고, 기업의 신기술과 솔루션을 엔지니어 청중과 연결합니다. 채널5코리아의 대표 컨퍼런스 중 하나입니다."
+      },
+      "analogDay": {
+        "title": "Analog Day",
+        "tag": "Conference",
+        "tagline": "디지털 시대에도 중요한 아날로그·전력 기술",
+        "body": "디지털 중심의 기술 흐름 안에서도 여전히 중요한 아날로그·전력 분야의 기술을 깊이 다루는 단일 트랙 컨퍼런스입니다. 전력 반도체, 신호 처리, 센서, 측정 기술이 중심 주제입니다."
+      },
+      "challenge": {
+        "title": "Developer Challenge",
+        "tag": "Contest",
+        "tagline": "엔지니어가 직접 만드는 기술 캠페인",
+        "body": "엔지니어의 직접 참여를 통해 기업의 기술과 플랫폼을 실제 프로젝트 경험으로 확산시킵니다. Industrial Edge AI Solution Challenge 등 산업 주제별 챌린지를 운영합니다."
+      },
+      "education": {
+        "title": "Education Program",
+        "tag": "Education",
+        "tagline": "오프라인 기술 교육과 ESG의 결합",
+        "body": "기업과 교육기관, 협회와 함께 오프라인 기술 교육을 설계하고 운영합니다. 교육 콘텐츠 기획, 강사 매칭, 현장 운영, 결과 보고까지 통합 지원합니다."
+      }
+    },
+    "sponsorship": {
+      "eyebrow": "참여 방식",
+      "headline": "컨퍼런스와 프로그램에 다양한 형태로 참여하실 수 있습니다.",
+      "items": {
+        "keynote": {
+          "title": "키노트 발표",
+          "description": "산업 아젠다 안에서 기업의 비전과 기술 메시지 전달."
+        },
+        "session": {
+          "title": "트랙 세션",
+          "description": "특정 트랙에서 기술 발표 및 시연 진행."
+        },
+        "booth": {
+          "title": "부스 참여",
+          "description": "컨퍼런스 부스 운영을 통한 직접 데모와 미팅."
+        },
+        "sponsor": {
+          "title": "스폰서십",
+          "description": "컨퍼런스·콘테스트 후원을 통한 브랜드 노출."
+        },
+        "cohost": {
+          "title": "공동 주최",
+          "description": "채널5코리아와 함께 행사를 공동 기획·운영."
+        }
+      }
+    },
+    "cta": {
+      "headline": "다음 행사에 참여하고 싶으신가요?",
+      "ctaPrimary": "스폰서십 문의하기",
+      "ctaSecondary": "지난 행사 보기 (e4ds.com)"
+    }
+  },
+  "partners": {
+    "meta": {
+      "title": "파트너",
+      "description": "글로벌 반도체·전자·임베디드 기업이 한국 엔지니어 시장과 소통하기 위해 채널5코리아와 함께해왔습니다."
+    },
+    "intro": {
+      "eyebrow": "파트너",
+      "headline": "한국 엔지니어 시장을 함께 만나는 회사들.",
+      "body": "글로벌 기술 기업들이 한국 엔지니어 시장과 소통하기 위해 채널5코리아와 함께해왔습니다. 일회성 광고가 아닌 장기적 기술 커뮤니케이션 관점에서 협업이 이루어지고 있습니다."
+    },
+    "categories": {
+      "eyebrow": "협업 기업",
+      "items": {
+        "semiconductor": "글로벌 반도체 기업",
+        "distribution": "전자부품 유통",
+        "measurement": "계측·테스트",
+        "embedded": "임베디드 / 소프트웨어",
+        "education": "교육 기관 / 협회"
+      },
+      "disclaimer": "로고는 공개 동의를 받은 기업에 한해 노출됩니다. 현재 보이는 항목은 placeholder입니다.",
+      "logoPlaceholder": "Logo"
+    },
+    "collaboration": {
+      "eyebrow": "협업 유형",
+      "headline": "기업의 목적과 시장 단계에 따라\n협업 형태가 달라집니다.",
+      "body": "신제품 출시 시점에는 웨비나와 뉴스레터를, 시장 포지셔닝 단계에서는 컨퍼런스와 콘테스트를, 장기 생태계 기여 활동에서는 교육 사업을 활용합니다.",
+      "items": {
+        "webinar": {
+          "title": "웨비나",
+          "description": "신제품·기술 세미나 운영."
+        },
+        "newsletter": {
+          "title": "뉴스레터",
+          "description": "기술 콘텐츠 및 캠페인 확산."
+        },
+        "conference": {
+          "title": "컨퍼런스",
+          "description": "세션 발표, 부스, 스폰서십."
+        },
+        "contest": {
+          "title": "콘테스트",
+          "description": "개발자 참여형 기술 캠페인."
+        },
+        "education": {
+          "title": "교육",
+          "description": "오프라인 기술 교육 지원."
+        }
+      }
+    },
+    "cases": {
+      "eyebrow": "대표 사례",
+      "headline": "실제 운영된 사례.",
+      "disclaimer": "사례는 공개 동의를 받은 항목에 한해 게재됩니다. 일부는 익명으로 표기됩니다. 현재 항목은 placeholder입니다.",
+      "items": [
+        {
+          "type": "웨비나 시리즈",
+          "title": "(사례 1 제목 — 운영팀 확정 예정)"
+        },
+        {
+          "type": "컨퍼런스 스폰서십",
+          "title": "(사례 2 제목 — 운영팀 확정 예정)"
+        },
+        {
+          "type": "콘테스트 운영",
+          "title": "(사례 3 제목 — 운영팀 확정 예정)"
+        }
+      ]
+    },
+    "cta": {
+      "headline": "채널5코리아와의 협업을\n검토 중이신가요?",
+      "ctaPrimary": "협업 문의하기",
+      "ctaSecondary": "미디어킷 요청하기"
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "문의",
+      "description": "광고, 웨비나, 컨퍼런스, 뉴스레터, 기술 콘테스트, 교육 지원 사업 문의를 남겨주세요. 1~3 영업일 이내 회신드립니다."
+    },
+    "headline": "목표에 맞는 최적의 접근\n방법을 함께 찾겠습니다.",
+    "description": "목표를 알려주시면 영업일 기준 1일 이내에 맞춤 제안서를 보내드립니다.",
+    "sidebar": {
+      "officeLabel": "오피스",
+      "officeValue": "서울 강남 · 대한민국",
+      "addressLabel": "주소",
+      "address": "서울특별시 강남구 테헤란로 123,\n채널5코리아빌딩 13층",
+      "phoneLabel": "전화",
+      "phone": "02-1234-5678",
+      "emailLabel": "이메일",
+      "email": "partnership@channel5korea.com",
+      "hoursLabel": "영업 시간",
+      "hours": "월–금 09:00–18:00 (KST)",
+      "imageCaption": "오피스 / 시안 placeholder"
+    },
+    "mediaKit": {
+      "headline": "미디어킷 요청",
+      "body": "문의 전에 독자 데이터와 요금 카드를 확인하고 싶으신가요? 미디어킷을 바로 다운로드하세요.",
+      "cta": "미디어킷 다운로드"
+    },
+    "form": {
+      "companySectionHeading": "기업 정보",
+      "contactSectionHeading": "연락처",
+      "inquirySectionHeading": "문의 내용",
+      "company": "회사명",
+      "name": "이름",
+      "position": "직책",
+      "email": "이메일",
+      "phone": "연락처",
+      "interests": "관심 서비스",
+      "timeline": "희망 진행 시기",
+      "message": "문의 내용",
+      "requestMediaKit": "미디어킷도 함께 요청합니다",
+      "privacyConsent": "개인정보 수집 및 이용에 동의합니다",
+      "submit": "문의 제출",
+      "submitting": "전송 중…",
+      "interestOptions": {
+        "webinar": "웨비나",
+        "newsletter": "뉴스레터",
+        "banner": "배너 광고",
+        "conference": "컨퍼런스",
+        "contest": "개발자 콘테스트",
+        "education": "교육 프로그램",
+        "other": "기타"
+      },
+      "timelineOptions": {
+        "placeholder": "선택해주세요",
+        "asap": "즉시 / 한 달 이내",
+        "q1": "1~3개월 이내",
+        "q2": "3~6개월 이내",
+        "later": "6개월 이후",
+        "tbd": "미정"
+      },
+      "placeholders": {
+        "company": "채널5 코리아",
+        "name": "홍길동",
+        "position": "마케팅 매니저",
+        "email": "you@company.com",
+        "phone": "010-0000-0000",
+        "message": "캠페인 목표, 타겟 독자, 특별한 요구 사항 등을 자유롭게 알려주세요…"
+      },
+      "errors": {
+        "required": "필수 항목입니다.",
+        "email": "올바른 이메일 형식이 아닙니다.",
+        "phone": "올바른 연락처 형식이 아닙니다.",
+        "interests": "관심 서비스를 하나 이상 선택해주세요.",
+        "privacy": "개인정보 수집·이용에 동의해주세요.",
+        "submit": "제출 중 오류가 발생했습니다. 잠시 후 다시 시도해주세요."
+      },
+      "success": {
+        "headline": "문의가 접수되었습니다.",
+        "body": "담당자가 검토 후 1~3 영업일 이내 회신드립니다. 미디어킷을 요청하신 경우 별도로 전달드리겠습니다.",
+        "ctaReset": "다른 문의 보내기"
+      }
+    }
+  },
+  "floatingCTA": {
+    "label": "제안 문의",
+    "secondaryLabel": "미디어킷 요청"
+  },
+  "footer": {
+    "aboutDescription": "e4ds.com을 기반으로 전기전자·반도체·임베디드 산업의 기술 커뮤니케이션을 운영하는 B2B 기술 미디어 플랫폼 기업입니다.",
+    "servicesHeading": "서비스",
+    "companyHeading": "회사",
+    "platformsHeading": "운영 플랫폼",
+    "contactHeading": "연락처",
+    "servicesLinks": {
+      "banner": "배너 광고",
+      "newsletter": "뉴스레터 마케팅",
+      "webinar": "웨비나",
+      "conference": "컨퍼런스",
+      "contest": "기술 콘테스트",
+      "education": "교육 지원 사업"
+    },
+    "platformsLinks": {
+      "e4ds": "e4ds.com",
+      "webinar": "e4ds Webinar",
+      "make": "Make.e4ds",
+      "kmap": "KMAP"
+    },
+    "contactInfo": {
+      "addressLabel": "주소",
+      "address": "서울특별시 강남구 테헤란로 123, 채널5코리아빌딩 13층",
+      "emailLabel": "이메일",
+      "email": "partnership@channel5korea.com",
+      "phoneLabel": "전화",
+      "phone": "02-1234-5678",
+      "hoursLabel": "영업 시간",
+      "hours": "월–금 09:00–18:00 (KST)"
+    },
+    "copyright": "© 2026 주식회사 채널5코리아. All rights reserved.",
+    "legalLinks": {
+      "privacy": "개인정보처리방침",
+      "terms": "이용약관"
+    }
+  },
+  "cookieBanner": {
+    "message": "이 사이트는 사용자 경험 개선과 통계 분석을 위해 쿠키를 사용합니다.",
+    "acceptLabel": "동의",
+    "rejectLabel": "거부",
+    "policyLink": "개인정보처리방침 보기"
+  },
+  "notFound": {
+    "headline": "페이지를 찾을 수 없습니다",
+    "description": "요청하신 페이지가 존재하지 않거나 이동되었을 수 있습니다.",
+    "ctaPrimary": "홈으로 돌아가기",
+    "ctaSecondary": "서비스 보기"
+  }
+}
