@@ -1,29 +1,17 @@
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import { ArrowUpRight } from "lucide-react";
 
 import { Link } from "@/i18n/navigation";
 import { Card } from "@/components/ui/Card";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
+import { getAudienceData, type Locale } from "@/lib/site-data";
 import { DonutChart } from "./HomeMediaSnapshotChart";
 
 export async function HomeMediaSnapshot() {
+  const locale = (await getLocale()) as Locale;
   const t = await getTranslations("home.mediaSnapshot");
-
-  // Placeholder distribution — replace with operations-team data
-  const audienceData = [
-    { name: t("audienceItems.rd"), value: 45 },
-    { name: t("audienceItems.decision"), value: 20 },
-    { name: t("audienceItems.marketing"), value: 15 },
-    { name: t("audienceItems.academia"), value: 10 },
-    { name: t("audienceItems.other"), value: 10 },
-  ];
-  const industryData = [
-    { name: t("industryItems.semiconductor"), value: 30 },
-    { name: t("industryItems.embedded"), value: 25 },
-    { name: t("industryItems.automotive"), value: 20 },
-    { name: t("industryItems.automation"), value: 15 },
-    { name: t("industryItems.other"), value: 10 },
-  ];
+  const { role: audienceData, industry: industryData } =
+    await getAudienceData(locale);
 
   return (
     <SectionWrapper

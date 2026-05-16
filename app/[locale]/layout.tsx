@@ -11,6 +11,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Analytics } from "@/components/layout/Analytics";
 import { CookieBanner } from "@/components/layout/CookieBanner";
 import { FloatingCTA } from "@/components/layout/FloatingCTA";
+import { AnnouncementBanner } from "@/components/layout/AnnouncementBanner";
 
 import "../globals.css";
 
@@ -27,6 +28,12 @@ const jetbrainsMono = JetBrains_Mono({
   display: "swap",
   weight: ["400", "500"],
 });
+
+// All locale pages read from DB at request time so admin edits show up
+// immediately. revalidatePath() in server actions invalidates per-route cache
+// but we keep the layout dynamic so DB-driven Header / Footer / banner stay
+// fresh too.
+export const dynamic = "force-dynamic";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -137,6 +144,7 @@ export default async function LocaleLayout({
     >
       <body className="flex min-h-screen flex-col">
         <NextIntlClientProvider>
+          <AnnouncementBanner />
           <Header />
           <div className="flex-1">{children}</div>
           <Footer />

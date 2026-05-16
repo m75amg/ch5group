@@ -1,7 +1,8 @@
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 
 import { Container } from "@/components/shared/Container";
 import { Eyebrow } from "@/components/shared/Eyebrow";
+import { getStats, type Locale } from "@/lib/site-data";
 
 function Stat({ value, label }: { value: string; label: string }) {
   return (
@@ -15,7 +16,9 @@ function Stat({ value, label }: { value: string; label: string }) {
 }
 
 export async function AboutIdentity() {
+  const locale = (await getLocale()) as Locale;
   const t = await getTranslations("about.identity");
+  const stats = await getStats(locale);
 
   return (
     <section className="bg-background-inverse text-foreground-inverse">
@@ -43,24 +46,13 @@ export async function AboutIdentity() {
           </div>
         </div>
 
-        <div className="mt-16 lg:mt-20 grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-12 border-t border-white/10 pt-10 lg:pt-12">
-          <Stat
-            value={t("stats.yearsValue")}
-            label={t("stats.yearsLabel")}
-          />
-          <Stat
-            value={t("stats.audienceValue")}
-            label={t("stats.audienceLabel")}
-          />
-          <Stat
-            value={t("stats.partnersValue")}
-            label={t("stats.partnersLabel")}
-          />
-          <Stat
-            value={t("stats.eventsValue")}
-            label={t("stats.eventsLabel")}
-          />
-        </div>
+        {stats.length > 0 ? (
+          <div className="mt-16 lg:mt-20 grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-12 border-t border-white/10 pt-10 lg:pt-12">
+            {stats.map((s) => (
+              <Stat key={s.key} value={s.value} label={s.label} />
+            ))}
+          </div>
+        ) : null}
       </Container>
     </section>
   );

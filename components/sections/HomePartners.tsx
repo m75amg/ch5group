@@ -3,33 +3,42 @@ import { ArrowUpRight } from "lucide-react";
 
 import { Link } from "@/i18n/navigation";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
-
-// Placeholder partner identifiers — replace with real partner names/logo SVGs
-// once supplied by the operations team.
-const PARTNER_PLACEHOLDERS = Array.from({ length: 8 }, (_, i) => `partner-${i + 1}`);
+import { getPublishedPartners } from "@/lib/site-data";
 
 export async function HomePartners() {
   const t = await getTranslations("home.partnersBlock");
+  const partners = await getPublishedPartners(8);
 
   return (
-    <SectionWrapper
-      tone="muted"
-      eyebrow={t("eyebrow")}
-      title={t("headline")}
-    >
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-px bg-border border border-border rounded-lg overflow-hidden">
-        {PARTNER_PLACEHOLDERS.map((id) => (
-          <div
-            key={id}
-            aria-label={`Partner placeholder ${id}`}
-            className="aspect-[3/1] flex items-center justify-center bg-background"
-          >
-            <span className="text-caption uppercase tracking-[0.08em] text-neutral-400">
-              Logo
-            </span>
-          </div>
-        ))}
-      </div>
+    <SectionWrapper tone="muted" eyebrow={t("eyebrow")} title={t("headline")}>
+      {partners.length === 0 ? (
+        <p className="text-body text-foreground-muted">
+          등록된 파트너가 없습니다.
+        </p>
+      ) : (
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-px bg-border border border-border rounded-lg overflow-hidden">
+          {partners.map((p) => (
+            <div
+              key={p.id}
+              aria-label={p.name}
+              className="aspect-[3/1] flex items-center justify-center bg-background"
+            >
+              {p.logoPath && !p.logoPath.includes("placeholder") ? (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  src={p.logoPath}
+                  alt={p.name}
+                  className="max-h-12 max-w-32 object-contain"
+                />
+              ) : (
+                <span className="text-caption uppercase tracking-[0.08em] text-neutral-400">
+                  {p.name}
+                </span>
+              )}
+            </div>
+          ))}
+        </div>
+      )}
 
       <div className="mt-10">
         <Link

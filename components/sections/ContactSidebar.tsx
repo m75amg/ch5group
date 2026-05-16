@@ -1,8 +1,13 @@
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import { Mail, MapPin, Phone, Clock, FileDown } from "lucide-react";
 
 import { Container } from "@/components/shared/Container";
 import { Eyebrow } from "@/components/shared/Eyebrow";
+import {
+  getContactInfo,
+  getCurrentMediaKit,
+  type Locale,
+} from "@/lib/site-data";
 
 interface InfoRow {
   icon: React.ReactNode;
@@ -12,32 +17,43 @@ interface InfoRow {
 }
 
 export async function ContactSidebar() {
+  const locale = (await getLocale()) as Locale;
   const t = await getTranslations("contact");
   const tSidebar = await getTranslations("contact.sidebar");
   const tMediaKit = await getTranslations("contact.mediaKit");
+
+  const [contactDb, mediaKitDb] = await Promise.all([
+    getContactInfo(locale),
+    getCurrentMediaKit(),
+  ]);
+
+  const phone = contactDb?.phone ?? tSidebar("phone");
+  const email = contactDb?.email ?? tSidebar("email");
+  const address = contactDb?.address ?? tSidebar("address");
+  const hours = contactDb?.hours ?? tSidebar("hours");
 
   const rows: InfoRow[] = [
     {
       icon: <MapPin className="h-4 w-4" />,
       label: tSidebar("addressLabel"),
-      value: tSidebar("address"),
+      value: address,
     },
     {
       icon: <Phone className="h-4 w-4" />,
       label: tSidebar("phoneLabel"),
-      value: tSidebar("phone"),
-      href: `tel:${tSidebar("phone").replace(/[^+\d]/g, "")}`,
+      value: phone,
+      href: `tel:${phone.replace(/[^+\d]/g, "")}`,
     },
     {
       icon: <Mail className="h-4 w-4" />,
       label: tSidebar("emailLabel"),
-      value: tSidebar("email"),
-      href: `mailto:${tSidebar("email")}`,
+      value: email,
+      href: `mailto:${email}`,
     },
     {
       icon: <Clock className="h-4 w-4" />,
       label: tSidebar("hoursLabel"),
-      value: tSidebar("hours"),
+      value: hours,
     },
   ];
 
@@ -100,13 +116,23 @@ export async function ContactSidebar() {
               <p className="mt-2 text-body-sm text-neutral-300 leading-relaxed">
                 {tMediaKit("body")}
               </p>
-              <a
-                href="#"
-                aria-disabled="true"
-                className="inline-flex items-center gap-1 mt-3 text-button text-brand-accent hover:text-brand-accent-hover transition-colors"
-              >
-                {tMediaKit("cta")} →
-              </a>
+              {mediaKitDb ? (
+                <a
+                  href={mediaKitDb.filePath}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="inline-flex items-center gap-1 mt-3 text-button text-brand-accent hover:text-brand-accent-hover transition-colors"
+                >
+                  {tMediaKit("cta")} ({mediaKitDb.version}) →
+                </a>
+              ) : (
+                <span
+                  aria-disabled="true"
+                  className="inline-flex items-center gap-1 mt-3 text-button text-neutral-500"
+                >
+                  {tMediaKit("cta")} (준비 중)
+                </span>
+              )}
             </div>
           </div>
         </div>

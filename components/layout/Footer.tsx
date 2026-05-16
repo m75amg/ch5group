@@ -1,7 +1,12 @@
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 
 import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/shared/Container";
+import {
+  getContactInfo,
+  getFooterLinks,
+  type Locale,
+} from "@/lib/site-data";
 import { Logo } from "./Logo";
 
 interface FooterLink {
@@ -54,12 +59,17 @@ function FooterColumn({
 }
 
 export async function Footer() {
+  const locale = (await getLocale()) as Locale;
   const tFooter = await getTranslations("footer");
   const tServices = await getTranslations("footer.servicesLinks");
   const tCompany = await getTranslations("nav");
-  const tPlatforms = await getTranslations("footer.platformsLinks");
   const tContact = await getTranslations("footer.contactInfo");
   const tLegal = await getTranslations("footer.legalLinks");
+
+  const [platformsDb, contactDb] = await Promise.all([
+    getFooterLinks(),
+    getContactInfo(locale),
+  ]);
 
   const services: FooterLink[] = [
     { label: tServices("banner"), href: "/services#banner" },
@@ -78,39 +88,28 @@ export async function Footer() {
     { label: tCompany("contact"), href: "/contact" },
   ];
 
-  const platforms: FooterLink[] = [
-    {
-      label: tPlatforms("e4ds"),
-      href: "https://www.e4ds.com",
-      external: true,
-    },
-    {
-      label: tPlatforms("webinar"),
-      href: "https://webinar.e4ds.com",
-      external: true,
-    },
-    {
-      label: tPlatforms("make"),
-      href: "https://make.e4ds.com",
-      external: true,
-    },
-    { label: tPlatforms("kmap"), href: "#", external: true },
-  ];
+  const platforms: FooterLink[] = platformsDb.map((p) => ({
+    label: p.label,
+    href: p.url,
+    external: p.isExternal,
+  }));
 
-  const contactRows: ContactRow[] = [
-    { label: tContact("addressLabel"), value: tContact("address") },
-    {
-      label: tContact("emailLabel"),
-      value: tContact("email"),
-      href: `mailto:${tContact("email")}`,
-    },
-    {
-      label: tContact("phoneLabel"),
-      value: tContact("phone"),
-      href: `tel:${tContact("phone").replace(/[^+\d]/g, "")}`,
-    },
-    { label: tContact("hoursLabel"), value: tContact("hours") },
-  ];
+  const contactRows: ContactRow[] = contactDb
+    ? [
+        { label: tContact("addressLabel"), value: contactDb.address },
+        {
+          label: tContact("emailLabel"),
+          value: contactDb.email,
+          href: `mailto:${contactDb.email}`,
+        },
+        {
+          label: tContact("phoneLabel"),
+          value: contactDb.phone,
+          href: `tel:${contactDb.phone.replace(/[^+\d]/g, "")}`,
+        },
+        { label: tContact("hoursLabel"), value: contactDb.hours },
+      ]
+    : [];
 
   return (
     <footer className="bg-background-inverse text-foreground-inverse">

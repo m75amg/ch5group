@@ -1,0 +1,236 @@
+// Channel5 Korea — admin/CMS schema
+// All multilingual fields are JSON { ko: string, en: string }.
+// Display order fields default to 0 and are sorted ascending in the UI.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ─── Authentication ──────────────────────────────────────────────────────────
+
+enum UserRole {
+  ADMIN
+  EDITOR
+}
+
+model User {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  passwordHash String
+  name         String
+  role         UserRole @default(EDITOR)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+// ─── A1 · Hero/About 통계 수치 ───────────────────────────────────────────────
+
+model Stat {
+  key          String   @id // "years" | "audience" | "partners" | "events"
+  value        String // "16+" | "420K+" — display value, not numeric
+  label        Json // { ko, en }
+  displayOrder Int      @default(0)
+  updatedAt    DateTime @updatedAt
+}
+
+// ─── A2 · 독자 직군 / 산업 분포 차트 ─────────────────────────────────────────
+
+enum ChartType {
+  ROLE
+  INDUSTRY
+}
+
+model AudienceData {
+  id           String    @id @default(cuid())
+  chartType    ChartType
+  name         Json // { ko, en }
+  value        Int // percent 0-100
+  displayOrder Int       @default(0)
+  updatedAt    DateTime  @updatedAt
+
+  @@index([chartType, displayOrder])
+}
+
+// ─── A3 · 파트너 로고 ────────────────────────────────────────────────────────
+
+enum PartnerCategory {
+  SEMICONDUCTOR
+  DISTRIBUTION
+  MEASUREMENT
+  EMBEDDED
+  EDUCATION
+}
+
+model Partner {
+  id           String          @id @default(cuid())
+  name         String // 회사명 (단일 언어 — 고유명사)
+  logoPath     String // /uploads/partners/abc.svg
+  category     PartnerCategory
+  externalUrl  String?
+  consentDate  DateTime? // 로고 사용 허락 받은 날짜
+  isPublished  Boolean         @default(true)
+  displayOrder Int             @default(0)
+  createdAt    DateTime        @default(now())
+  updatedAt    DateTime        @updatedAt
+
+  @@index([category, displayOrder])
+  @@index([isPublished])
+}
+
+// ─── A4 · Featured Programs ──────────────────────────────────────────────────
+
+enum ProgramTag {
+  CONFERENCE
+  CONTEST
+  EDUCATION
+}
+
+model Program {
+  id           String     @id @default(cuid())
+  slug         String     @unique // physicalAI | techDay | analogDay | challenge | education
+  title        Json // { ko, en }
+  tag          ProgramTag
+  tagline      Json // { ko, en }
+  body         Json // { ko, en }
+  imagePath    String? // /uploads/programs/...
+  externalUrl  String?
+  eventDate    DateTime?
+  isFeatured   Boolean    @default(true)
+  displayOrder Int        @default(0)
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+
+  @@index([isFeatured, displayOrder])
+}
+
+// ─── A5 · Partners Cases ─────────────────────────────────────────────────────
+
+model Case {
+  id           String   @id @default(cuid())
+  partnerName  String? // null → anonymous
+  type         Json // { ko, en } — "웨비나 시리즈" / "Webinar series"
+  title        Json // { ko, en }
+  body         Json? // { ko, en } — optional detail body
+  isPublished  Boolean  @default(true)
+  displayOrder Int      @default(0)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+// ─── A6 · Media Kit PDF ──────────────────────────────────────────────────────
+
+model MediaKit {
+  id         String   @id @default(cuid())
+  filePath   String // /uploads/media-kit/v2026q2.pdf
+  version    String // "2026 Q2"
+  fileSizeKb Int
+  isCurrent  Boolean  @default(false)
+  uploadedAt DateTime @default(now())
+  uploadedBy String?
+}
+
+// ─── A8 · Announcements (상단 배너) ──────────────────────────────────────────
+
+model Announcement {
+  id        String    @id @default(cuid())
+  message   Json // { ko, en }
+  linkUrl   String?
+  startsAt  DateTime?
+  endsAt    DateTime?
+  isActive  Boolean   @default(true)
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+
+  @@index([isActive, startsAt, endsAt])
+}
+
+// ─── B1 · About History Timeline ─────────────────────────────────────────────
+
+model HistoryItem {
+  id           String   @id @default(cuid())
+  year         String // "2009" or "—" for unknown
+  title        Json // { ko, en }
+  description  Json // { ko, en }
+  displayOrder Int      @default(0)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+// ─── B2 · Company Contact Info (singleton row id=1) ──────────────────────────
+
+model ContactInfo {
+  id        Int      @id @default(1)
+  address   Json // { ko, en }
+  phone     String
+  email     String
+  hours     Json // { ko, en }
+  updatedAt DateTime @updatedAt
+}
+
+// ─── B5 · Footer Platform Links ──────────────────────────────────────────────
+
+model FooterLink {
+  id           String  @id @default(cuid())
+  label        String // "e4ds.com" (고유명사 단일 언어)
+  url          String
+  isExternal   Boolean @default(true)
+  displayOrder Int     @default(0)
+}
+
+// ─── B6 · Email Templates ────────────────────────────────────────────────────
+
+model EmailTemplate {
+  key       String   @id // "autoReply" | "notification"
+  subject   Json // { ko, en }
+  body      Json // { ko, en } — supports {variables} like {name}, {company}
+  updatedAt DateTime @updatedAt
+}
+
+// ─── D1 · Contact 폼 제출 ────────────────────────────────────────────────────
+
+enum InquiryStatus {
+  NEW
+  IN_PROGRESS
+  REPLIED
+  ARCHIVED
+}
+
+model Inquiry {
+  id              String        @id @default(cuid())
+  company         String
+  name            String
+  position        String?
+  email           String
+  phone           String?
+  interests       Json // string[] — ["webinar","newsletter",...]
+  timeline        String?
+  message         String
+  requestMediaKit Boolean       @default(false)
+  locale          String        @default("ko")
+  status          InquiryStatus @default(NEW)
+  assigneeId      String?
+  internalNote    String?
+  ipHash          String? // hashed for privacy compliance
+  userAgent       String?
+  submittedAt     DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
+
+  @@index([status, submittedAt])
+  @@index([email])
+}
+
+// ─── Free-form site copy (i18n KV override store) ────────────────────────────
+// Lets editors override individual translation keys without code changes.
+// Front-end falls back to messages/{locale}.json when a key is absent.
+
+model SiteCopy {
+  key       String   @id // dot notation: "home.hero.headline"
+  value     Json // { ko, en }
+  updatedAt DateTime @updatedAt
+  updatedBy String?
+}

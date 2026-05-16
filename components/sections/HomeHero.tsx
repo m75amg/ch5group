@@ -1,8 +1,9 @@
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/shared/Container";
+import { getStats, type Locale } from "@/lib/site-data";
 
 function HeroVisual() {
   return (
@@ -93,8 +94,12 @@ function Stat({ value, label }: { value: string; label: string }) {
 }
 
 export async function HomeHero() {
+  const locale = (await getLocale()) as Locale;
   const t = await getTranslations("home.hero");
   const tNav = await getTranslations("nav");
+
+  // Stats from DB, ordered by displayOrder, take first 3 for the Hero strip.
+  const stats = (await getStats(locale)).slice(0, 3);
 
   return (
     <section className="bg-background-inverse text-foreground-inverse">
@@ -126,20 +131,13 @@ export async function HomeHero() {
           </div>
         </div>
 
-        <div className="mt-16 lg:mt-20 grid grid-cols-3 gap-6 lg:gap-12 max-w-3xl border-t border-white/10 pt-10 lg:pt-12">
-          <Stat
-            value={t("stats.yearsValue")}
-            label={t("stats.yearsLabel")}
-          />
-          <Stat
-            value={t("stats.audienceValue")}
-            label={t("stats.audienceLabel")}
-          />
-          <Stat
-            value={t("stats.partnersValue")}
-            label={t("stats.partnersLabel")}
-          />
-        </div>
+        {stats.length > 0 ? (
+          <div className="mt-16 lg:mt-20 grid grid-cols-3 gap-6 lg:gap-12 max-w-3xl border-t border-white/10 pt-10 lg:pt-12">
+            {stats.map((s) => (
+              <Stat key={s.key} value={s.value} label={s.label} />
+            ))}
+          </div>
+        ) : null}
       </Container>
     </section>
   );

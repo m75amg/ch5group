@@ -1,28 +1,15 @@
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 
 import { Card } from "@/components/ui/Card";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
+import { getAudienceData, type Locale } from "@/lib/site-data";
 import { DonutChart } from "./HomeMediaSnapshotChart";
 
 export async function MediaPlatformAudience() {
+  const locale = (await getLocale()) as Locale;
   const t = await getTranslations("mediaPlatform.audience");
-  const tHome = await getTranslations("home.mediaSnapshot");
-
-  // Reuse placeholder distribution from Home snapshot — to be replaced by operations data
-  const audienceData = [
-    { name: tHome("audienceItems.rd"), value: 45 },
-    { name: tHome("audienceItems.decision"), value: 20 },
-    { name: tHome("audienceItems.marketing"), value: 15 },
-    { name: tHome("audienceItems.academia"), value: 10 },
-    { name: tHome("audienceItems.other"), value: 10 },
-  ];
-  const industryData = [
-    { name: tHome("industryItems.semiconductor"), value: 30 },
-    { name: tHome("industryItems.embedded"), value: 25 },
-    { name: tHome("industryItems.automotive"), value: 20 },
-    { name: tHome("industryItems.automation"), value: 15 },
-    { name: tHome("industryItems.other"), value: 10 },
-  ];
+  const { role: audienceData, industry: industryData } =
+    await getAudienceData(locale);
 
   return (
     <SectionWrapper
